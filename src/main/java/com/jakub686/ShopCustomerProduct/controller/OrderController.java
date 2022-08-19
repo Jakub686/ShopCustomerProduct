@@ -1,5 +1,7 @@
 package com.jakub686.ShopCustomerProduct.controller;
 
+import com.jakub686.ShopCustomerProduct.dto.OrderRequest;
+import com.jakub686.ShopCustomerProduct.dto.OrderResponse;
 import com.jakub686.ShopCustomerProduct.entity.Customer;
 import com.jakub686.ShopCustomerProduct.repository.CustomerRepository;
 import com.jakub686.ShopCustomerProduct.repository.ProductRepository;
