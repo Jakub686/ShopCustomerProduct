@@ -11,8 +11,8 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-@JsonIgnoreProperties(ignoreUnknown = true)
-@JsonInclude(JsonInclude.Include.NON_DEFAULT)
+@JsonIgnoreProperties(ignoreUnknown = true) // ignore price field
+@JsonInclude(JsonInclude.Include.NON_DEFAULT) // it will not return price field in json(postman)
 public class OrderResponse {
 
     private String name;
