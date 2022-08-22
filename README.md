@@ -1,4 +1,4 @@
 # ShopCustomerProduct
-SpringBoot CRUD, REST API, mysql relations.
+SpringBoot CRUD, REST API, mysql, relations db.
 
-User can ADD customers and their products by REST API in to relation data base, also delete and update information id DB about customers and thier products.
+User can login as a manager, add new customers, add new companies, add new cars. Assigning cars to customer, delete cars, customers etc.
