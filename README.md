@@ -1,2 +1,2 @@
 # ShopCustomerProduct
-SpringBoot, mysql, relations 
+SpringBoot, REST API, mysql, relations 
