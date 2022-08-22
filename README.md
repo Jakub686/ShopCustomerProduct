@@ -1,2 +1,4 @@
 # ShopCustomerProduct
-SpringBoot, REST API, mysql, relations 
+SpringBoot CRUD, REST API, mysql relations.
+
+User can ADD customers and their products in to relation data base
