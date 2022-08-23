@@ -22,6 +22,5 @@ public class OrderResponse {
         this.name = name;
         this.productName = productName;
     }
-
     private int price;
 }

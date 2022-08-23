@@ -5,6 +5,7 @@ import com.jakub686.ShopCustomerProduct.dto.OrderResponse;
 import com.jakub686.ShopCustomerProduct.entity.Customer;
 import com.jakub686.ShopCustomerProduct.repository.CustomerRepository;
 import com.jakub686.ShopCustomerProduct.repository.ProductRepository;
+import com.jakub686.ShopCustomerProduct.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,22 +17,20 @@ import java.util.List;
 @RestController
 public class OrderController {
     @Autowired
-    private CustomerRepository customerRepository;
-    @Autowired
-    private ProductRepository productRepository;
+    private OrderService orderService;
 
     @PostMapping("/placeOrder")
-    public Customer placeOrder(@RequestBody OrderRequest request){
-        return customerRepository.save(request.getCustomer());
+    public Customer placeOrder(@RequestBody OrderRequest request) {
+        return orderService.saveCustomer(request.getCustomer());
     }
 
     @GetMapping("/findAllOrders")
-    public List<Customer> findAllOrders(){
-        return customerRepository.findAll();
+    public List<Customer> findAllOrders() {
+        return orderService.findAllOrders();
     }
 
     @GetMapping("/getInfo")
-    public List<OrderResponse> getJoinInformation(){
-        return customerRepository.getJoinInformation();
+    public List<OrderResponse> getJoinInformation() {
+        return orderService.getJoinInformation();
     }
 }
