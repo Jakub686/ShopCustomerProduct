@@ -7,5 +7,5 @@ User can ADD, DELETE and READ customers list and their products list or READ int
 ![image](https://user-images.githubusercontent.com/80157748/185968074-73b574f2-a64a-4f73-9f29-97ad454ac133.png)
 
 ![image](https://user-images.githubusercontent.com/80157748/185967277-90836b90-e3f7-4e51-b7ed-12eb7582f389.png)
-![image](https://user-images.githubusercontent.com/80157748/186205338-7948d290-9da5-4657-bf9f-5c9caad74744.png)
+![image](https://user-images.githubusercontent.com/80157748/186205561-7f938c4d-4ef8-4728-b629-7d56a5064595.png)
 
