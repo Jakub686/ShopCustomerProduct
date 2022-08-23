@@ -1,7 +1,7 @@
 # ShopCustomerProduct
 SpringBoot CRUD, REST API, mysql, relations db.
 
-User can ADD, DELETE and READ customers list and their products list or READ intrested fields, by using API
+User can ADD, DELETE and READ customers list and their products list or READ intrested fields, by using API.
 
 
 ![image](https://user-images.githubusercontent.com/80157748/185968074-73b574f2-a64a-4f73-9f29-97ad454ac133.png)
