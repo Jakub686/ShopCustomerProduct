@@ -28,4 +28,13 @@ public class OrderService {
     public List<OrderResponse> getJoinInformation() {
         return customerRepository.getJoinInformation();
     }
+
+    public void delete(Integer id) {
+        boolean  exists = customerRepository.existsById(id);
+        if(!exists){
+            throw new IllegalStateException("employee is not exists");
+        }
+        customerRepository.deleteById(id);
+    }
+
 }

@@ -7,10 +7,7 @@ import com.jakub686.ShopCustomerProduct.repository.CustomerRepository;
 import com.jakub686.ShopCustomerProduct.repository.ProductRepository;
 import com.jakub686.ShopCustomerProduct.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -32,5 +29,10 @@ public class OrderController {
     @GetMapping("/getInfo")
     public List<OrderResponse> getJoinInformation() {
         return orderService.getJoinInformation();
+    }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable("id") Integer id){
+        orderService.delete(id);
     }
 }
