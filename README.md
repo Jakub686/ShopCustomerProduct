@@ -1,6 +1,12 @@
 # ShopCustomerProduct
 SpringBoot CRUD, REST API, mysql, relations db.
 
+### Purpose of the project
+
+I have written this project to learn how to use Springboot, with database and Postman.
+
+### About
+
 User can ADD, DELETE and READ customers list and their products list or READ intrested fields, by using API.
 
 
